@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Maternal & Child Health Management System",
+        "description": "A digital platform for healthcare delivery and monitoring across maternal and childcare levels. Includes role-based portals for mothers, healthcare workers, and administrators.",
+        "image": "/images/project-maternal.png",
+        "technologies": [
+            "React.js",
+            "Laravel",
+            "MySQL",
+            "Laravel Sanctum"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "https://github.com/senzoasanda6-cmd/maternal-child-health-portal"
+    },
+    {
+        "title": "HRD Skills Learning & Development Portal",
+        "description": "A system for managing training records, attendance, and generating reports for officials in the Gauteng Department of Health. Facilitates annual training needs analysis and participation trends.",
+        "image": "/images/project-hrd.png",
+        "technologies": [
+            "C#",
+            "ASP.NET",
+            "SQL Server"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "https://github.com/tapiseng/Learning-and-Development"
+    },
+    {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio website showcasing projects, skills, and experience. Built with responsive design and smooth animations using GSAP.",
+        "image": "/images/project-portfolio.png",
+        "technologies": [
+            "React.js",
+            "Bootstrap",
+            "GSAP"
+        ],
+        "liveUrl": "https://yourportfolio.com",
+        "repoUrl": "https://github.com/senzoasanda6-cmd/portfolio-website"
+    }
+]
