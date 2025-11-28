@@ -12,18 +12,7 @@
         "liveUrl": "#",
         "repoUrl": "https://github.com/senzoasanda6-cmd/maternal-child-health-portal"
     },
-    {
-        "title": "HRD Skills Learning & Development Portal",
-        "description": "A system for managing training records, attendance, and generating reports for officials in the Gauteng Department of Health. Facilitates annual training needs analysis and participation trends.",
-        "image": "/images/project-hrd.png",
-        "technologies": [
-            "C#",
-            "ASP.NET",
-            "SQL Server"
-        ],
-        "liveUrl": "#",
-        "repoUrl": "https://github.com/tapiseng/Learning-and-Development"
-    },
+    
     {
         "title": "Portfolio Website",
         "description": "A personal portfolio website showcasing projects, skills, and experience. Built with responsive design and smooth animations using GSAP.",
@@ -34,6 +23,6 @@
             "GSAP"
         ],
         "liveUrl": "https://yourportfolio.com",
-        "repoUrl": "https://github.com/senzoasanda6-cmd/portfolio-website"
+        "repoUrl": "https://github.com/senzoasanda6-cmd/senzo-portfolio"
     }
 ]

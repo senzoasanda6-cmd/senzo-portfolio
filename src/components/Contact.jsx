@@ -11,6 +11,7 @@ import {
   Alert,
 } from "react-bootstrap";
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     from_name: "",
@@ -31,9 +32,9 @@ const Contact = () => {
     setError(null);
 
     // --- Replace with your EmailJS details ---
-    const serviceID = "YOUR_SERVICE_ID";
-    const templateID = "YOUR_TEMPLATE_ID";
-    const publicKey = "YOUR_PUBLIC_KEY";
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs.send(serviceID, templateID, formData, publicKey).then(
       (response) => {

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "HRD Skills Learning & Development Portal",
+    "description": "A system for managing training records, attendance, and generating reports for officials in the Gauteng Department of Health. Facilitates annual training needs analysis and participation trends.",
+    "image": "/images/project-hrd.png",
+    "technologies": [
+      "C#",
+      "ASP.NET",
+      "SQL Server"
+    ],
+    "liveUrl": "#",
+    "repoUrl": "https://github.com/tapiseng/Learning-and-Development"
+  }
+]
