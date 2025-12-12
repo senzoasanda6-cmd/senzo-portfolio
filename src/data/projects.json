@@ -24,5 +24,18 @@
         ],
         "liveUrl": "https://senzo-portfolio.netlify.app/",
         "repoUrl": "https://github.com/senzoasanda6-cmd/senzo-portfolio"
+    },
+    {
+        "title": "gdoh-provincial-surveyor-app",
+        "description": "App for collecting and analyzing healthcare facility survey",
+        "image": "/images/survey.png",
+        "technologies": [
+            "React.js",
+            "Laravel",
+            "MySQL",
+            "Laravel Sanctum"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "https://github.com/senzoasanda6-cmd/gdoh-provincial-surveyor-app"
     }
 ]

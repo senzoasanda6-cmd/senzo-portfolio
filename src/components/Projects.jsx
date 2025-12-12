@@ -20,7 +20,7 @@ export default function Projects() {
               }}>
                 <Card.Img variant="top" src={project.image} />
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title className="fw-bold">{project.title}</Card.Title>
+                  <Card.Title className="fw-bold" style={{ color: 'var(--text-primary)' }}>{project.title}</Card.Title>
                   <Card.Text className="text-secondary">
                     {project.description}
                   </Card.Text>
