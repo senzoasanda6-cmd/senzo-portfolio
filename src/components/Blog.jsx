@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
+import { gsap } from "gsap";
 import { FaReact, FaNodeJs, FaDocker, FaDatabase } from "react-icons/fa";
 import { FaL, FaLaravel } from "react-icons/fa6";
 import {
@@ -64,8 +65,36 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    let mm = gsap.matchMedia(sectionRef.current);
+
+    mm.add({
+      reduceMotion: "(prefers-reduced-motion: reduce)"
+    }, (context) => {
+
+      let {reduceMotion} = context.conditions;
+
+      // Note: Make sure to add the 'windmill' class to the elements you want to rotate
+      gsap.to(".windmill", {
+        rotation: 360,
+        // adjust animation in tweens
+        duration: reduceMotion ? 7.2 : 3.6,
+      });
+
+      // or set up easy conditionals
+      if (!reduceMotion) { 
+        let tl = gsap.timeline();
+        // tl.to(...)
+      }
+    });
+
+    return () => mm.revert(); // Cleanup when unmounted
+  }, []);
+
   return (
-    <section id="skills" className="py-5 bg-dark">
+    <section id="skills" className="py-5 bg-dark" ref={sectionRef}>
       <Container>
         <div className="text-center mb-5">
           <h2 className="display-5 fw-bold gradient-text mb-3">

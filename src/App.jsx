@@ -201,6 +201,29 @@ export default function App() {
             ease: "power2.inOut",
           });
         });
+
+        // Projects Timeline Animation
+        const projectSection = document.querySelector("#projects");
+        if (projectSection) {
+          // Note: Add sequence2 definition if needed, or remove if unused. Added a dummy one here to prevent ReferenceError.
+          const sequence2 = gsap.timeline();
+          
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: projectSection,
+              start: "top 75%", // Starts animating when the top of the projects section hits 75% down the viewport
+              end: "bottom center", // You can adjust this end marker
+              toggleActions: "play none none reverse", // Plays sequentially when entering, reverses when scrolling back up
+              // scrub: 1, // Uncomment this if you want the animation to be strictly tied to your scroll bar!
+            }
+          });
+          
+          tl.to(projectSection.querySelectorAll(".scrubber"), { x: 500, duration: 2 })
+            .to(projectSection.querySelectorAll(".mask"), { scaleX: 0}, "<")
+            .to(projectSection.querySelectorAll(".icon1"), {scale: 1, duration: 0.3}, 0.5)
+            .to(projectSection.querySelectorAll(".text1"), { autoAlpha: 1, scale: 1}, "-=0.2")
+            .add(sequence2, "+=0.1").timeScale(0.8);
+        }
       };
 
       // Use requestAnimationFrame for smoother animations
